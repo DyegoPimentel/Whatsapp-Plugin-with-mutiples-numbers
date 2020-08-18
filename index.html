@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_BR"> <!-- Change it to your language -->
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário do Whatsapp com multiplos telefones</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div>
+		<div>		
+			<form id="form_zap" action="" class="form_zap">
+				<div id="modal_title">
+					<p class="title">Quer falar com o seu Coordenador de Curso?</p>
+				</div>
+				<span class="closemodal">X</span>
+				<label for="inputname">Insira seu nome:</label>
+				<input id="inputname" class="input_zap" type="text" required="" placeholder="Ex: José da Silva..." autocomplete="off" required> <!-- Name is required -->
+
+				<label for="">Escolha o curso: </label>
+				<select id="select_number" class="input_zap seletor"  required> <!-- This select is required -->
+					<option value="" selected disabled>Escolha o curso...</option> <!-- This option is the first selection and don't able to be clicked. -->>
+					<option value="556299999999">Big Data e Inteligência Artificial</option> <!-- In value put the full number of whatsapp without the plus in front.  -->>
+					<option value="556299999999">Ciência da Computação</option>
+					<option value="556299999999">Engenharia de Software</option>	
+				</select>				
+				<button type="submit" id="send_button" class="button_zap">Iniciar Conversa</button type="submit"> <!-- Button to send message -->
+				
+			</form>
+		</div>
+		<img id="icon-whatsapp" class="image-icon-whatsapp" src="img/whatsapp.webp" alt="" width="70"> <!-- Icon of whatsapp -->
+	</div>
+	<script type="text/javascript" src="js/whatsapp_functions.js"></script> <!-- Call the JS functions -->
+</body>
+</html>
